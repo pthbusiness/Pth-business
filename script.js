@@ -20,3 +20,19 @@ themeSwitch.addEventListener('click', () => {
     darkTheme !== 'active' ? enableDarkmode() : disableDarkmode();
     
 });
+
+
+const scrollToTopButton = document.querySelector(".scrollToTopButton");
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 200) {
+        scrollToTopButton.classList.add("visible");
+    } else {
+        scrollToTopButton.classList.remove("visible");
+    }
+});
+
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0
+    });
+});
