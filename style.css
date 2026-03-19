@@ -3,13 +3,14 @@
     margin: 0px;
     padding: 0px;
     color: var(--text-muted);
+    transition: all 0.3s;
 }
 
 body {
     background-color: var(--bg-color);
 }
 :root {
-  --bg-color: #F9F7F2;      
+  --bg-color: #fffbf0;      
   --text-main: #1A1A1A;    
   --text-muted: #555555;   
   --accent-gold: #ffa600;  
@@ -17,7 +18,7 @@ body {
   --white: #FFFFFF;
   --accent-main: #d2e5ff;
 }
-.darkMode {
+.darkTheme {
     --bg-color: #1a1a1a;
     --text-main: #f9f7f2;
     --text-muted: #e0ded8;
@@ -54,4 +55,46 @@ h1 {
     margin-left: 15%;
     background-color: red;
     margin-top: 1%;
+}
+
+
+
+
+
+
+
+#themeSwitch {
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    position: absolute;
+    left: 5%;
+    padding: 0.5%;
+    box-shadow: 1px 1px 15px #b4d3ff inset, -1px -1px 15px #b4d3ff inset;
+}
+.darkTheme #themeSwitch {
+        box-shadow: none;
+}
+#moon {
+    display: block;
+}
+#sun {
+    display: none;
+}
+#sun:hover {
+    color: white;
+}
+
+.darkTheme #moon {
+    display: none;
+}
+
+.darkTheme #sun {
+    display: block;
 }
