@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+</head>
+<body>
+    <div class="card"></div>
+
+</body>
+<script>
+let products = [
+    {
+    name : "hellasd",
+    img : "4k Desktop Wallpapers Pc.jpg",
+    des : "lorem ispum dolor sit ametsectutur constecutor adipiscising elit."
+    },
+    {
+    name : "xsdjlkvdn",
+    img : "4k Desktop Wallpapers Pc.jpg",
+    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    },
+    {
+    name : "xsdjlkvdn",
+    img : "4k Desktop Wallpapers Pc.jpg",
+    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    },
+    {
+    name : "xsdjlkvdn",
+    img : "4k Desktop Wallpapers Pc.jpg",
+    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    },
+    {
+    name : "xsdjlkvdn",
+    img : "4k Desktop Wallpapers Pc.jpg",
+    des : "arebhk  ih ihgiu wuqier hgihdakg oi hi djo khgioad h."
+    }
+    
+]
+const card = document.querySelector(".card");
+products.forEach(item =>  {
+    const con = document.createElement("span");
+    con.innerHTML = `
+        <h1> ${item.name}</h1>
+        <p> ${item.des}</p>
+        <style>
+span {
+            display: inline-block;
+    width: 25%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #d3d3d3  inset, -5px -5px 20px #d3d3d3 inset;
+    padding: 2%;
+    height: 50vh;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+</style>
+    `;
+    card.appendChild(con);
+});
+</script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.card {
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.548); */
+
+}
+
+
+
+
+</style>
+</html>
