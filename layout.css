@@ -1,13 +1,3 @@
-    .con {
-    display: inline-block;
-    width: 25%;
-    border-radius: 15px;
-    box-shadow: 5px 5px 20px #d6d6d6  inset, -5px -5px 20px #d6d6d6 inset;
-    padding: 2%;
-    height: 50vh;
-    margin-left: 2%;
-    margin-top: 2%;
-}
 * {
     margin: 0px;
     padding: 0px;
@@ -119,11 +109,28 @@ h1 {
     background-color: transparent;
 }
 
-.card {
+/* .card {
     width: 100%;
     background-color: rgba(230, 65, 65, 0)
 
+} */
+
+.con {
+    display: inline-block;
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #d6d6d6  inset, -5px -5px 20px #d6d6d6 inset;
+    padding: 2%;
+    height: 70vh;
+    margin-left: 2%;
+    margin-top: 2%;
+
 }
+.img:hover {
+    
+}
+
+
 footer {
     background-color: black;
     position: static;
