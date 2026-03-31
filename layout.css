@@ -1,0 +1,134 @@
+    .con {
+    display: inline-block;
+    width: 25%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #d6d6d6  inset, -5px -5px 20px #d6d6d6 inset;
+    padding: 2%;
+    height: 50vh;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    color: var(--text-muted);
+    transition: all 0.3s;
+    font-family: "Montserrat";
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('fonts/Montserrat.ttf') format("truetype");
+}
+@font-face {
+    font-family: "PlaywriteIN";
+    src: url('fonts/PlaywriteIN.ttf') format("truetype");
+}
+
+:root {
+  --bg-color: #fffefb;      
+  --text-main: #1A1A1A;    
+  --text-muted: #555555;   
+  --accent-gold: #ffa600;  
+  --border-light: #E0DED8; 
+  --white: #FFFFFF;
+  --accent-main: #f0c0ff;
+  --black: #000;
+}
+
+.darkTheme {
+    --bg-color: #1a1a1a;
+    --text-main: #f9f7f2;
+    --text-muted: #e0ded8;
+    --accent-main: #2f3f36;
+    --white: #2f3f36;
+    --black: #ffffff;
+}
+
+::selection {
+    background-color: #acff2f38 !important;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+#navbar {
+    background-color: black;
+    /* padding: 0.25%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+#themeSwitch {
+    height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    position: absolute;
+    left: 5%;
+    padding: 0.5%;
+}
+.darkTheme #themeSwitch {
+        box-shadow: none;
+}
+#moon {
+    display: block;
+}
+#sun {
+    display: none;
+}
+#sun:hover {
+    color: white;
+}
+
+.darkTheme #moon {
+    display: none;
+}
+
+.darkTheme #sun {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "PlaywriteIN";
+    color: white;
+    font-weight: 400;
+}
+
+#cart {
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: none;
+    border-radius: 50%;
+    padding: 0.5%;
+    position: absolute;
+    right: 5%;
+    background-color: transparent;
+}
+
+.card {
+    width: 100%;
+    background-color: rgba(230, 65, 65, 0)
+
+}
+footer {
+    background-color: black;
+    position: static;
+    bottom: 0%;
+    padding: 2%;
+    margin: 0%;
+    color: white;
+}
