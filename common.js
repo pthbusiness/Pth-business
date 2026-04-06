@@ -143,17 +143,21 @@ products.forEach(item =>  {
             .img {
                 background: url("${item.img}");
                 height: 60%;
-                width: 80%;
+                width: 90%;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                margin-left: 11%;
+                margin-left: 6%;
                 border-radius: 5px;
                 margin-bottom: 5%;
             }
         </style>
     `;
     container.appendChild(card);
+    card.addEventListener('click', (e) => {
+        const url = `product.html?name=${encodeURIComponent(item.name)}&img=${encodeURIComponent(item.img)}&des=${encodeURIComponent(item.des)}`;
+    window.open(url, '_blank');
+    });
 });
 
 const scrollObserver = new IntersectionObserver((entries) => {
