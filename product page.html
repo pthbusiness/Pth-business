@@ -3,34 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Product Details</title>
 </head>
 <body>
-    <div class="product-display">
-    <div id="product-img"></div>
+<div id="navbar">
+    <button id="themeSwitch">
+
+        <svg width="auto" height="auto" id="moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="var(--black)">
+        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#fff"/>
+        </svg>
+
+        <svg width="auto" height="auto" id="sun" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="var(--black)"stroke-width="0" >
+            <path d="M7 3V0H9V3H7Z" fill="#fff"/>
+            <path d="M9 13V16H7V13H9Z" fill="#fff"/>
+            <path d="M11 8C11 9.65685 9.65685 11 8 11C6.34315 11 5 9.65685 5 8C5 6.34315 6.34315 5 8 5C9.65685 5 11 6.34315 11 8Z" fill="#fff"/>
+            <path d="M0 9H3V7H0V9Z" fill="#fff"/>    
+            <path d="M16 7H13V9H16V7Z" fill="#fff"/>
+            <path d="M3.75735 5.17157L1.63603 3.05025L3.05025 1.63603L5.17157 3.75735L3.75735 5.17157Z" fill="#fff"/>
+            <path d="M12.2426 10.8284L14.364 12.9497L12.9497 14.364L10.8284 12.2426L12.2426 10.8284Z" fill="#fff"/>
+            <path d="M3.05025 14.364L5.17157 12.2426L3.75735 10.8284L1.63603 12.9498L3.05025 14.364Z" fill="#fff"/>
+            <path d="M12.9497 1.63604L10.8284 3.75736L12.2426 5.17158L14.364 3.05026L12.9497 1.63604Z" fill="#fff"/>
+        </svg>
+
+    </button>  
+    <h1>Business</h1>
+    <button id="cart">
+        <svg width="auto" height="auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </button>
+</div>
+
+    <div id="box">
+    
+    <div class="display">
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+        <div class="img"></div>
+    </div>
+    <div id="display-controls">
+<button id="left">
+        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z" fill="#ffffff"/>
+</svg>
+    </button>
+    <button id="right">
+        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" fill="#ffffff"/>
+        </svg>
+    </button>
+    </div>
+</div>
+    <div id="info">
     <h2 id="product-name"></h2>
     <p id="product-des"></p>
+    </div>
 </div>
 </body>
-<script>
-    // 1. Grab the parameters from the address bar
-const params = new URLSearchParams(window.location.search);
-
-// 2. Extract the individual pieces of data
-const name = params.get('name');
-const img = params.get('img');
-const des = params.get('des');
-
-// 3. Inject them into the page elements
-if (name) {
-    document.getElementById('product-name').innerText = name;
-    document.getElementById('product-des').innerText = des;
-    
-    // Setting the background image to match your style
-    const imgDiv = document.getElementById('product-img');
-    imgDiv.style.backgroundImage = `url("${img}")`;
-    imgDiv.style.backgroundSize = "cover";
-    imgDiv.style.backgroundPosition = "center";
-}
+<script src="main.js">
 </script>
 </html>

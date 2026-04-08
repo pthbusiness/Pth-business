@@ -109,45 +109,79 @@ h1 {
     background-color: transparent;
 }
 
-/* .card {
-    width: 100%;
-    background-color: rgba(230, 65, 65, 0)
-
-} */
-
-.container {
-    display: block;
+#box {
+    width: 40%;
+    height: 80vh;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
-.con {
-    display: inline-block;
-    width: 25%;
-    border-radius: 15px;
-    box-shadow: 5px 5px 20px #d6d6d6  inset, -5px -5px 20px #d6d6d6 inset;
-    padding: 2%;
-    height: 70vh;
-    margin-left: 3%;
-    margin-top: 7%;
-    background-color: rgb(255, 255, 250);
-    opacity: 0;
-    transform: translateY(80px);
+
+#display-controls {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#box button {
+    display: inline;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    box-shadow: 2px 2px 5px grey inset, -2px -2px 5px grey inset;
+    background-color: #555555;
+}
+
+.display {
+    height: 100%;
+    width: 90%;
+    background-color: transparent;
     overflow: hidden;
+    display: inline-flex;
+}
 
+.img {
+    flex: 0 0 100%;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1 / 1;
 }
-.con:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
+
+.img:nth-child(1){
+    background-image: url("4k Desktop Wallpapers Pc.jpg");
 }
-.con p {
-    line-height: 20px;
-    margin-top: 5%;
+
+.img:nth-child(2){
+    background-image: url("Don Williams.jpg");
 }
-.visible{
-    opacity: 1;
-    transform: translateY(0) scale(1);
+
+.img:nth-child(3){
+    background-image: url("STScI-01EVT7X0BR54ZWDP1AG2DA54RA.jpg");
 }
-h2 {
-    color: black;
+
+.img:nth-child(4){
+    background-image: url("pexels-pixabay-86596.jpg");
 }
+
+#info {
+    display: inline;
+    width: 40%;
+    margin-left: 50%;
+}
+
+
+
+
+
 footer {
     background-color: black;
     position: static;
@@ -155,8 +189,4 @@ footer {
     padding: 2%;
     margin: 0%;
     color: white;
-}
-.full {
-    width: 100%;
-    height: 100vh;
 }
