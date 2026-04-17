@@ -189,10 +189,6 @@ h1 {
     text-align: center;
 }
 
-
-
-
-
 footer {
     background-color: black;
     position: static;
@@ -200,4 +196,16 @@ footer {
     padding: 2%;
     margin: 0%;
     color: white;
+}
+form {
+    margin-left: 45%;
+    background-color: rebeccapurple;
+    width: 50%;
+    height: 50vh;
+    margin-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
 }
