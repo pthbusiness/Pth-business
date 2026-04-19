@@ -199,7 +199,6 @@ footer {
 }
 form {
     margin-left: 45%;
-    background-color: rebeccapurple;
     width: 50%;
     height: 50vh;
     margin-bottom: 10%;
@@ -208,4 +207,6 @@ form {
     justify-content: center;
     flex-direction: column;
     gap: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px #c2c2c2 inset, -2px -2px 20px #c2c2c2 inset;
 }
